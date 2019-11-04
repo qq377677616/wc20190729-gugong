@@ -1,0 +1,16 @@
+<!--pages/wish/wish.wxml-->
+<view class="container flex_bsss" bindtap="bjsss">
+<view class="bj">
+    <!-- <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/indexsa(1).jpg"></image> -->
+    <image class="index_img {{index0==index?'show':'hide'}}" wx:for="{{bjindex}}" wx:for-item="item" wx:key="index" bindload="onImageLoad" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/fangs({{item+1}}).jpg"></image>
+  </view>
+  <view class="from" wx:if="{{fangsas}}">
+    <input class="f_input" placeholder-class="place-holder" disabled="true" data-id="{{aArr[0].id}}" placeholder="{{aArr[0].text}}" bindtap="xuans"></input>
+    <input class="f_input" placeholder-class="place-holder" disabled="true" data-id="{{aArr[1].id}}" placeholder="{{aArr[1].text}}" bindtap="xuans"></input>
+    <input class="f_input" placeholder-class="place-holder" disabled="true" data-id="{{aArr[2].id}}" placeholder="{{aArr[2].text}}" bindtap="xuans"></input>
+    <view class="sop"><image bindtap="random" mode="widthFix" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/zzzz1.png"></image></view>
+    <textarea placeholder-class="place-holder1" placeholder="输入我的心愿..." value="{{texts}}" class="f_textarea"></textarea>
+    <view class="btn" bindtap="btns">提交</view>
+  </view>
+  <view class="deng {{onsaaa}}"></view>
+</view>

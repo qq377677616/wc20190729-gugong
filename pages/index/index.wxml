@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<!-- 签到 -->
+
+<!-- <view class="more" wx:if="{{more}}"><view class="null" catchtap="qis1"></view><signIn id="sign"  bind:updataSelect="selectItem"></signIn></view> -->
+<view class="container">
+  <view wx:if="{{isshows}}" class="bj">
+    <!-- <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/indexsa(1).jpg"></image> -->
+    <image class="index_img {{index0==index?'show':'hide'}}" wx:for="{{bjindex}}" wx:for-item="item" wx:key="index" bindload="onImageLoad" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/indexsa({{item+1}}).jpg"></image>
+  </view>
+  
+  <view wx:if="{{!isshows}}" class="{{h_bj}} bj"></view>
+  <view class="wrap">
+    <view class="head flex_ssaf">
+      <view class="head_left">
+        <view class="p">所捐献金砖：{{data.jz_num}}</view>
+        <view class="p">屋脊兽数量：{{data.wjs_num}}</view>
+      </view>
+      
+      <view class="head_right">
+        <view class="p">已建造{{data.percent}}%</view>
+        <progress percent="{{data.percent}}" active color="#ffd382" stroke-width="8" border-radius="8"/>
+      </view>
+    </view>
+    <view class="head_font">
+      <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/indexa_font.png"></image>
+    </view>
+    <text class="index_info_font">该建筑为故宫太和殿精神殿堂，将由参与活动用户通过线下日常行走步数累计按照活动比例兑换金砖共同完成修建。 \n Fighting!右上角进度条可实时查看修建进度哦～一起进入祈福之路吧
+    </text>
+    <view class="btn">
+      <!-- <button class="b_icon zindex2" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button> -->
+      <image class="b_icon zindex2" bindtap="getStep" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/index_4.png"></image>
+    </view>
+  </view>
+</view>
+

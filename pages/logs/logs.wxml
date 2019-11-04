@@ -1,0 +1,194 @@
+<!--index.wxml-->
+<view class="more" wx:if="{{more}}"><view class="null" catchtap="qis1"></view><signIn id="sign"  bind:updataSelect="selectItem"></signIn></view>
+<scroll-view scroll-x="true" scroll-y="true" class="container" scroll-left="{{scrollleft}}">
+  <view class="container-wrap">
+    <image bindtap="firstsojs" class="container-wrap_img" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/map1.jpg"></image>
+    <li class="li li1 {{arr[0].class}}" bindtap="shutk1" data-is="{{arr[0].is}}">
+      <image src="{{arr[0].img}}"></image>
+    </li>
+    <li class="li li2 {{arr[1].class}}" bindtap="shutk2" data-is="{{arr[1].is}}">
+      <image src="{{arr[1].img}}"></image>
+    </li>
+    <li class="li li3 {{arr[2].class}}" bindtap="shutk3" data-is="{{arr[2].is}}">
+      <image src="{{arr[2].img}}"></image>
+    </li>
+    <li class="li li4 {{arr[3].class}}" bindtap="shutk4" data-is="{{arr[3].is}}">
+      <image src="{{arr[3].img}}"></image>
+    </li>
+    <li class="li li5 {{arr[4].class}}" bindtap="shutk5" data-is="{{arr[4].is}}">
+      <image src="{{arr[4].img}}"></image>
+    </li>
+    <li class="li li6 {{arr[5].class}}" bindtap="shutk6" data-is="{{arr[5].is}}">
+      <image src="{{arr[5].img}}"></image>
+    </li>
+    <li class="li li7 {{arr[6].class}}" bindtap="shutk7" data-is="{{arr[6].is}}">
+      <image src="{{arr[6].img}}"></image>
+    </li>
+    <li class="li li8 {{arr[7].class}}" bindtap="shutk8" data-is="{{arr[7].is}}">
+      <image src="{{arr[7].img}}"></image>
+    </li>
+    <li class="li li9 {{arr[8].class}}" bindtap="shutk9" data-is="{{arr[8].is}}">
+      <image src="{{arr[8].img}}"></image>
+    </li>
+    <li class="li li10 {{arr[9].class}}" bindtap="shutk10" data-is="{{arr[9].is}}">
+      <image src="{{arr[9].img}}"></image>
+    </li>
+    <li class="li li11 {{arr[10].class}}" bindtap="shutk11" data-is="{{arr[10].is}}">
+      <image src="{{arr[10].img}}"></image>
+    </li>
+    <li class="li li12 {{arr[11].class}}" bindtap="shutk12" data-is="{{arr[11].is}}">
+      <image src="{{arr[11].img}}"></image>
+    </li>
+    <li class="li li13 {{arr[12].class}}" bindtap="shutk13" data-is="{{arr[12].is}}">
+      <image src="{{arr[12].img}}"></image>
+    </li>
+    <li class="li li14 {{arr[13].class}}" bindtap="shutk14" data-is="{{arr[13].is}}">
+      <image src="{{arr[13].img}}"></image>
+    </li>
+    <li class="li li15 {{arr[14].class}}" bindtap="shutk15" data-is="{{arr[14].is}}">
+      <image src="{{arr[14].img}}"></image>
+    </li>
+    <li class="li li16 {{arr[15].class}}" bindtap="shutk16" data-is="{{arr[15].is}}">
+      <image src="{{arr[15].img}}"></image>
+    </li>
+    <li class="li li17 {{arr[16].class}}" bindtap="shutk17" data-is="{{arr[16].is}}">
+      <image src="{{arr[16].img}}"></image>
+    </li>
+    <li class="li li18 {{arr[17].class}}" bindtap="shutk18" data-is="{{arr[17].is}}">
+      <image src="{{arr[17].img}}"></image>
+    </li>
+    <li class="li li19 {{arr[18].class}}" bindtap="shutk19" data-is="{{arr[18].is}}">
+      <image src="{{arr[18].img}}"></image>
+    </li>
+    <li class="li li20 {{arr[19].class}}" bindtap="shutk20" data-is="{{arr[19].is}}">
+      <image src="{{arr[19].img}}"></image>
+    </li>
+    <li class="li li21 {{arr[20].class}}" bindtap="shutk21" data-is="{{arr[20].is}}">
+      <image src="{{arr[20].img}}"></image>
+    </li>
+    <li class="li li22 {{arr[21].class}}" bindtap="shutk22" data-is="{{arr[21].is}}">
+      <image src="{{arr[21].img}}"></image>
+    </li>
+    <!--<li class="{{sclass}}"></li> -->
+    <view wx:if="{{data.step_site<22}}" class="spot flex_tb sq{{(data.step_site-1)*10+data.distance_z+1}}">
+      <view class="red"></view>
+    </view>
+    <view wx:if="{{data.step_site<22}}" class="s_progress{{data.step_site+1}}">
+      <view class="s_progress_main flex_ssaf">
+        <progress class="s_progress_a"activeColor="red" percent="{{data.distance}}" font-size="22" />
+        <image class="lock" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/lock.png"></image>
+      </view>
+      <view class="s_progress_font">
+        {{data.distance}}%
+      </view>
+    </view>
+  </view>
+  
+</scroll-view>
+<view class="head flex_ssaf">
+    <image wx:if="{{is_yk==2}}" class="img" src="{{data.zq_img?data.zq_img:user.avatarUrl}}"></image>
+    <button wx:if="{{is_yk==1}}" class="b_icon" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      <image class="img1a" src="{{data.zq_img?data.zq_img:user.avatarUrl}}"></image>
+    </button>
+    <view class="info flex">
+      <view class="view_ps">
+        <view class="p">步数：{{data.step_all}}K</view>
+        <view class="p">积分：{{data.jf_all}}</view>
+      </view>
+      <view class="view_ps">
+        <view class="p">坐骑：{{data.zq_name}}</view>
+        <view class="p">装备：X{{data.zb_num}}</view>
+      </view>
+    </view>
+    <view class="title">
+      <view class="p1">{{data.my_rank}}</view>
+      <view class="p">排名</view>
+    </view>
+  </view>
+  <!--head结束-->
+  <view class="qiandao" bindtap="qis">签到</view>
+  <!--签到结束-->
+  <view class="ac_rule" bindtap="togrule"></view>
+  <!--活动规则-->
+  <view class="left {{on?'on':''}}">
+    <view class="nav">
+      <view class="ul">
+        <view class="li" bindtap="jump_redire" data-url="/pages/ranking/ranking">排行榜</view>
+        <view class="li" bindtap="jump_redire" data-url="/pages/shop/Ashop">商城</view>
+        <!-- <view class="li">分享</view> -->
+        <button class="li" open-type='share'>分享</button>
+        <view class="li" bindtap="jump_redire" data-url="/pages/horse/horse">奖品</view>
+      </view>
+    </view>
+    <view class="jian" bindtap="togg"></view>
+  </view>
+  <view class="btn" bindtap="jump_redire" data-url="/pages/index/index">
+    <!-- <button class="b_icon zindex2" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button> -->
+      <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/road_10.png"></image>
+  </view>
+ 
+  <view class="popup flex_tb" wx:if="{{ruleIs}}">
+    <view class="rule">
+      <view class="rule_bj">
+        <view class="title">
+          活动规则
+        </view>
+        <scroll-view class="prize-wrap" scroll-y="true"  style="height: 760rpx">
+        <view class="h2">
+          一、活动攻略
+        </view>
+        <view class="p">1、活动说明：用户通过每日线下行走步数以1:10比例自动换算成线上里程；线下1步=0.5米=线上5米（每日记录上限为2万步），最终完成从扎寺到故宫的祈福之旅；</view>
+ <view class="p">2、关卡设置：活动过程中将沿线途径22个站点，用户完成挑战交互内容，首次通关将可获得1次抽奖机会和1块金砖；</view>
+ <view class="p">3、步数兑换：累积步数达到1000步时，可兑换金砖1块；前11位到达终点的用户将获得“屋脊兽”一只；金砖、屋脊兽均为“故宫精神殿堂”建筑材料，捐赠金砖和屋脊兽后将获得积分，1块金砖=2积分，1屋脊兽=500积分；积分可在【商城】兑换所需道具；</view>
+ <view class="p">4、排行榜：设置活动总排行榜，前5000名到达终点的用户将获得终极大奖抽奖机会（奖品详见下方奖品设置）；</view>
+  <view class="p"> </view>
+ <view class="h2">二、奖品设置</view>
+<view class="p">虚拟奖品：瑞兽、盔甲、头盔（装备增加步数积累倍率）</view>
+<view class="p">实物奖品：故宫文创产品、现金红包</view>
+<view class="p">终极奖品：故宫文创锦鲤大礼包</view>
+<!-- <view class="p">单公布之时的消费金额为准，不超过2万元）。</view> -->
+  </scroll-view>
+      </view>
+      <view class="close" bindtap="togrule"></view>
+    </view>
+  </view>
+  <view class="popup flex_tb" wx:if="{{j_is}}">
+    <view class="exchange">
+    <view class="exchange_bj1">
+      <view class="infos">
+        <view class="p flex_ssaf">
+          <p>共累计捐献金砖:</p>
+          <p>{{j_data.jz_all}}块</p>
+        </view>      
+        <view class="p flex_ssaf">
+          <p>新增兑换金砖:</p>
+          <p>{{j_data.get_jz}}块</p>
+        </view>      
+        <view class="p flex_ssaf">
+          <p>获得积分:</p>
+          <p>{{j_data.get_jf}}</p>
+        </view>      
+        <view class="p flex_ssaf">
+          <p>剩余步数:</p>
+          <p>{{j_data.step_sy}}</p> 
+        </view>      
+      </view>
+    </view>
+    <view class="close" bindtap="togrule1"></view>
+    </view>
+  </view>
+  <view class="first_jr" wx:if="{{guideIs}}" bindtap="imgIss">
+    <image class="first_jr_img {{imgIs==1?'show':'hied'}}" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/guide3.jpg"></image>
+    <image class="first_jr_img {{imgIs==2?'show':'hied'}}" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/guide1.jpg"></image>
+    <image class="first_jr_img {{imgIs==3?'show':'hied'}}" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/guide2.jpg"></image>
+  </view>
+  <view class="popup flex_tb" wx:if="{{s_gif}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title">
+            恭喜你成功通关祈福之路！
+          </view>
+          <view class="s_gif"></view>
+      </view>
+    </view>
+  </view>

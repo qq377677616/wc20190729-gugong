@@ -1,0 +1,60 @@
+/* pages/disclaimer/disclaimer.wxss */
+.container{ background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/a-bj.jpg') no-repeat;}
+.con{
+  padding-top: 50rpx;
+  width: 672rpx;
+  height: 900rpx;
+  margin: auto;
+}
+.con .con_info{
+  display: block;
+  width: 542rpx;
+  padding: 40rpx 50rpx 40rpx 60rpx;
+  height: 800rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  border:1rpx solid #b1a08f;
+  color: #7b5221;
+  font-size: 32rpx;
+  overflow: hidden;
+}
+.con .con_info .h2{
+  padding-bottom: 25rpx;
+  text-align: center;
+}
+.con .con_info .p{
+  font-size: 24rpx;
+  line-height: 160%;
+}
+.disclaimer_font{
+  padding: 20rpx;
+}
+.disclaimer_font .frame{
+  border:2rpx solid #b1a08f;
+  background: #fff;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 10rpx;
+}
+.disclaimer_font .frame i{
+  border-radius: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background: #b1a08f;
+}
+.disclaimer_font .p{
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  color: #7b5221;
+  line-height: 50rpx;
+}
+.btn{
+  padding-top: 6rpx;
+  text-align: center;
+  width: 100%;
+}
+.btn image{
+  display: inline-block;
+  width: 550rpx;
+  height: 135rpx;
+}

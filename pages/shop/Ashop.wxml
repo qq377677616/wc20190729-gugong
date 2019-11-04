@@ -1,0 +1,34 @@
+<view class="shop">
+  <view class="head">
+    <view class="go" bindtap="jump_redire"></view>
+    <view class="right" bindtap="jump_redire1">我的道具</view>
+    <view class="yt">
+      <view class="yt1">
+        <view class="yt2">
+          <view class="yt3">
+            <view class="p1 p">{{jf_all}}</view>
+            <view class="p2 p">当前积分</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mian">
+    <view class="ul">
+      <view class="li flex_ssaf" wx:for="{{list}}" wx:for-item="item">
+        <view class="img"><image src="{{item.img}}"></image><view class="day">3天</view></view>
+        <view class="infoa">
+          <view class="info flex_ssaf">
+            <view class="p1">{{item.title}}</view>
+            <view class="p2">所需积分：{{item.xh_jf}}</view>
+          </view>
+          <view class="sp">
+            {{item.content}}
+          </view>
+        </view>
+        
+        <view class="btn" data-id="{{item.id}}" data-xh="{{item.xh_jf}}" bindtap="exchange">购买</view>
+      </view>
+    </view>
+  </view>
+</view>

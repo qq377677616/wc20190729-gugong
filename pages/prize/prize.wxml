@@ -1,0 +1,44 @@
+<!--pages/prize/prize.wxml-->
+<view class="container flex_tb">
+  <view class="prize">
+    <scroll-view class="prize-wrap" scroll-y="true">
+      <view class="prize-wrap-li flex_ssaf" wx:for="{{list}}" wx:for-item="item" wx:for-index="idx">
+        <image src="{{item.img}}"></image>
+        <view class="info">
+          <view class="p1">{{item.prize_name}}</view>
+          <view class="p2">{{item.create_date}}</view>
+        </view>
+        <view class="btn" bindtap="collar" data-index="{{idx}}" data-id="{{item.id}}" data-is="{{item.is_lq}}">{{item.is_lq!=0?"已领取":"领取"}}</view>
+      </view>
+    </scroll-view>
+    <view class="go" bindtap="jump_redire"></view>
+  </view>
+</view>
+<view class="popup flex_tb" wx:if="{{close}}">
+  <view class="exchange ">
+    <view class="exchange_bj">
+      <view class="title">
+        <p class="p1">请留下您的信息</p>
+        <p class="p2">我们会将礼品送到您身边</p>
+      </view>
+      <view class="form">
+        <form bindsubmit="back_houtai">
+        <view class="form_div">
+          <view class="p">姓名</view>
+          <input class="" name="name"></input>
+        </view>
+        <view class="form_div">
+          <view class="p">电话</view>
+          <input class="" type="number" maxlength="11" name="tel"></input>
+        </view>
+        <view class="form_div">
+          <view class="p">地址</view>
+          <input class="" name="dar"></input>
+        </view>
+        <button class='subClass_btn2' formType="submit">提交</button>
+        </form>
+      </view>
+    </view>
+    <view class="close" bindtap="close"></view>
+  </view>
+</view>

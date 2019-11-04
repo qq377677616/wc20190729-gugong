@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/disclaimer/disclaimer",
+    "pages/game/Illustration",
+    "pages/game/qings",
+    "pages/game/mining",
+    "pages/game/piyi",
+    "pages/index/index", 
+    "pages/index1/index1",  
+    "pages/loading/loading",
+    "pages/game/noodles",
+    "pages/game/cut_p",
+    "pages/stepnum/stepnum",
+    "pages/game/exhibition",
+    "pages/shop/Ashop",
+    "pages/wish/wish",
+    "pages/horse/horse",
+    "pages/prize/prize",
+    "pages/Iprop/Iprop",
+    "pages/game/runner",
+    "pages/game/game",
+    "pages/ranking/ranking"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

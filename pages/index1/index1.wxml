@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<!-- 签到 -->
+<view class="more" wx:if="{{more}}"><view class="null" catchtap="qis1"></view><signIn id="sign"  bind:updataSelect="selectItem"></signIn></view>
+<view class="container {{h_bj}}">
+  <view class="wrap">
+    <view class="top flex_top" >
+      <view class="icon btnsa" style="float:left;">· · ·
+        <view class="b_icon" bindtap="jump_navigateTo4"></view>
+        <button wx:if="{{moreclass}}" class="b_icon zindex2" style="float:right;" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+      </view>
+      
+      <view class="icon btnsa" style="float:right;">签到
+        <view class="b_icon" bindtap="qis"></view>
+        <button wx:if="{{moreclass}}" class="b_icon zindex2" style="float:right;" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+      </view>
+    </view>
+    <progress class="usual_progress" percent="{{lavelArr.percent}}" activeColor="#fd915a" stroke-width="24rpx"/>
+    <view class="ranking">
+      <!-- <view class="icon2 btnsa" bindtap="jump_navigateTo1"> -->
+      <view class="icon2 btnsa">
+        <button wx:if="{{moreclass}}" class="b_icon zindex2" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+        <view class="b_icon" bindtap="jump_navigateTo1"></view>
+      </view>
+    </view>
+    <view class="list" style="background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/cloud-bj.png') top no-repeat;">
+      <view class="list-div"  style="background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/list.png') no-repeat;">
+        <view class="list-div-a flex_tb">
+          <view class="list-div-info flex_ssaf">
+            <view class="img"><image src="{{lavelArr.my_zq}}"></image></view>
+            <view class="info">
+              <view class="info_h2">我为故宫精神殿堂捐献：</view>
+              <view class="info_p">砖块：{{lavelArr.sz_num}}</view>
+              <view class="info_p">金砖： {{lavelArr.jz_num}}</view>
+              <view class="info_p">琉璃瓦：{{lavelArr.llw_num}}</view>
+              <view class="info_p">屋脊兽：{{lavelArr.wjs_num}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="list-div-s flex_tb">
+          <view class="icon1 btnsa">祈福之路
+            <button wx:if="{{moreclass}}" class="b_icon zindex2" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+            <view class="b_icon" bindtap="jump_navigateTo3"></view>
+          </view>
+          <view class="icon1" bindtap="jump_rule">活动规则</view>
+          <view class="icon1 btnsa">我的奖品
+            <button wx:if="{{moreclass}}" class="b_icon zindex2" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+            <view class="b_icon" bindtap="jump_navigateTo2"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="popup flex_tb" wx:if="{{exchangeIs}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title p">
+          <i>总步数</i><span>{{step_data.step_all}}</span>
+        </view>
+        <view class="mian p">
+          <view class="mian_title">可兑换</view>
+          <view class="flex_ssaf">
+            <view class="li">
+              <view class="img">
+                <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_z1.png"></image>
+              </view>
+              <input class="inp" type="number" name="zhuang" value="{{zhuangs}}" bindinput="zhuangbind"></input>
+              <view class="p2">砖块</view>
+            </view>
+            <view class="li">
+              <view class="img">
+                <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_z2.png"></image>
+              </view>
+              <input class="inp" type="number" name="wan" value="{{wans}}" bindinput="wanbind"></input>
+              <view class="p2">琉璃瓦</view>
+            </view>
+          </view>
+          <view class="btn1" bindtap="integral_bsdh">
+            兑换
+          </view>
+        </view>
+        <view class="p3">
+          若想积攒步数请点击关闭返回首页
+        </view>
+      </view>
+      <view class="close" bindtap="closes"></view>
+    </view>
+  </view>
+  <view class="popup flex_tb rule" wx:if="{{ruleIs}}">
+    <view class="rule_s">
+      <image class="imgs" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/rule.png"></image>
+      <image bindtap="qis1" class="imgc" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/close.png"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="noodles flex_line_c_m">
+    <view class="noodles_wrap" bindtap="xuan">
+      <image class="{{index0==index?'show':'hide'}}" mode="widthFix" wx:for="{{num}}" wx:for-item="item" wx:key="index" bindload="onImageLoad" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/jian({{item+1}}).png"></image>
+    </view>
+  </view>
+  <view class="bang {{ons}} {{t1}}">
+    <!-- <image class="ons" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_1.png"></image> -->
+    <view class="fonts">
+      经过沂州，村民们正在举办剪纸大赛，一起参与吧。
+      <image class="co" bindtap="jump_btns" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_7.png"></image>
+    </view>
+  </view>
+  <image class="shows" wx:if="{{t1}}" bindtap="jump_btns1" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_6.png"></image>
+
+</view>
+ <view class="popup flex_tb" wx:if="{{exchange}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title_pig">
+          <view class="title">
+            闯关成功
+          </view>
+        </view>
+        <view class="info">
+          <view class="p">获得金砖*10</view>
+          <!-- <view class="p" wx:if="{{status}}">获得屋脊兽*1</view> -->
+          <view class="p">获得一次抽奖机会</view>
+          <view class="p" wx:if="{{is_fly}}">获得放飞心愿一次</view>
+        </view>
+        <view class="btna btna1" bindtap="quebtn"></view>
+        <view class="btna btna2" bindtap="quebtn1"></view>
+      </view>
+      <!-- <view class="closea" bindtap="closes"></view> -->
+    </view>
+  </view>
+    <view class="PreservationImg" wx:if="{{PreservationImg}}">
+    <image class="img" bindlongtap="save" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_imgs5.png"></image>
+    <image class="btnasa" bindtap="jump_btn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_5.png"></image>
+  </view>

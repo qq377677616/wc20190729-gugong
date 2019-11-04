@@ -1,0 +1,145 @@
+/**app.wxss**/
+/* 全局样式*/
+page {
+    color: #333;
+    font-size: 14px;
+}
+page{
+  width: 100%;
+  height: 100%; 
+}
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-size: cover !important;
+}
+
+image { width: 100%; height: 100%;}
+.n {
+    font-weight: normal;
+    font-style: normal;
+}
+.b {
+    font-weight: bold;
+}
+.i {
+    font-style: italic;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.clearfix,.fix {
+    zoom: 1;
+}
+.clearfix:after,
+.fix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.ell {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.flex {
+    /* 转为弹性盒模型*/
+    display: flex;
+}
+.flex_wrap {
+    /* 转为弹性盒模型并自动换行*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex_inline {
+    /* 转为行内弹性盒模型*/
+    display: inline-flex;
+}
+.flex_b {
+    /* 垂直底部对齐*/
+    display: flex;
+    align-items: flex-end;
+}
+.flex_bsss{
+  /* 垂直居中*/
+  display: flex;
+  align-items: center; 
+}
+.flex_tb {
+    /* 垂直两端对齐*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;  /* 子元素横向排列 */
+    justify-content: center; /* 相对父元素水平居中 */
+    align-items: center; /*  子元素相对父元素垂直居中 */
+}
+.flex_ssaf{
+  /* 垂直两端对齐*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex_tb_c {
+    /* 多行垂直两端对齐，水平居中*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex_line_c_m {
+    /* 多行垂直居中，水平居中*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex_line_end {
+    /* 多行垂直起点在下沿*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex_lr {
+    /* 水平两端对齐，剩余空间平均分布*/
+    display: flex;
+    justify-content: space-between;
+}
+.flex_lr_m {
+    /* 水平两端对齐，剩余空间平均分布，垂直居中*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex_c_m {
+    /* 垂直水平居中*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex_c {
+    /* 水平居中*/
+    display: flex;
+    justify-content: center;
+}
+.flex_m {
+    /* 垂直居中*/
+    display: flex;
+    align-items: center;
+}
+.flex_nosize {
+    /* 子元素不自动*/
+    flex-shrink: 0;
+}
+.flex_autosize {
+    /* 子元素自动宽度*/
+    flex-grow: 1;
+}
+/* .container {
+
+}  */
+
+.flex1{flex: 1;}

@@ -1,0 +1,91 @@
+/* pages/shop/Ashop.wxss */
+.shop{
+
+}
+.head{
+  background: #ded4cb;
+  padding: 18rpx;
+  text-align: center
+}
+.yt{
+  display: inline-block;
+  width: 216rpx;
+  height: 216rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.yt1{
+  display: inline-block;
+  margin-top: 13rpx;
+  width: 190rpx;
+  height: 190rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.yt2{
+  display: inline-block;
+  margin-top: 9rpx;
+  width: 170rpx;
+  height: 170rpx;
+  background: #fff;
+  border: 1rpx solid #ded4cb;
+  border-radius: 50%;
+  text-align: center
+}
+.yt3{
+  margin-top: 30rpx;
+  width: 130rpx;
+  height: 130rpx;
+  display: inline-block
+}
+.yt3 .p{
+  line-height: 64rpx;
+  color: #886643;
+  text-align: center;
+}
+.yt3 .p1{
+  font-size: 48rpx;
+  border-bottom: 1rpx solid #ded4cb
+}
+.yt3 .p2{
+  font-size: 24rpx;
+}
+.mian{
+  padding:30rpx 50rpx;
+}
+.mian .ul .li{
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #d4d0cc;
+}
+.mian .ul .li:last-child{
+  border-bottom:0
+}
+.mian .ul .li .img{
+  width: 136rpx;
+  height: 136rpx;
+  background: #ebe6e1;
+  border-radius: 20rpx;
+}
+.mian .ul .li .info{
+  flex: 1;
+  padding: 0 24rpx;
+  line-height: 180%
+}
+.mian .ul .li .info .p1{
+  color:#886643;
+  font-size: 30rpx;
+}
+.mian .ul .li .info .p2{
+  color:#aeaeae;
+  font-size: 24rpx;
+}
+.mian .ul .li .btn{
+  width: 162rpx;
+  height: 56rpx;
+  background: #c6a582;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 56rpx;
+}

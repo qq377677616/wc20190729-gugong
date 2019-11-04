@@ -1,0 +1,22 @@
+<!--components/signIn/signIn.wxml-->
+
+  <view class="signin_container">
+    <view class="signin_img"></view>
+    <view class="sigin_center">
+      <view class="sigin_continuous"><ps>{{max_qd_str}}</ps></view>
+      <scroll-view scroll-y="true" class="calendar flex_line_c_m" style="height: 533rpx;">
+        
+        <view bindtap="fordata" data-itemid="{{item.number}}" class="num num_text {{item.class}}" wx:for="{{arr}}" wx:for-item="item">{{item.number}}</view>
+        <!-- <view class="num num_text num_text_this" >12</view>
+        <view class="num num_text num_this" >12</view> -->
+      </scroll-view>
+    </view>
+    <view class="sigin_bottom">
+      <view class="flex1">
+        <image bindtap="sig" data-id="1" src=" http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/452.png" mode="widthFix" class="sigin_buttom"></image>
+      </view>
+      <view class="flex1">
+        <image bindtap="sig2" data-id="2" src=" http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/453.png" mode="widthFix" class="sigin_buttom" ></image>
+      </view>
+    </view>
+  </view>

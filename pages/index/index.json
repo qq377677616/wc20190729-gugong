@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "扎寺故宫",
+  "usingComponents": {
+    "signIn":"/components/signIn/signIn"
+  }
+}

@@ -1,0 +1,26 @@
+<view class="shop">
+  <view class="head">
+    <view class="yt">
+      <view class="yt1">
+        <view class="yt2">
+          <view class="yt3">
+            <view class="p1 p">{{jf_all}}</view>
+            <view class="p2 p">当前积分</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mian">
+    <view class="ul">
+      <view class="li flex_ssaf" wx:for="{{list}}" wx:for-item="item">
+        <view class="img"><image src="{{item.img}}"></image></view>
+        <view class="info">
+          <view class="p1">{{item.title}}</view>
+          <view class="p2">兑换步数：{{item.bs}}</view>
+        </view>
+        <view class="btn" data-id="{{item.zk_id}}" bindtap="exchange">兑换</view>
+      </view>
+    </view>
+  </view>
+</view>

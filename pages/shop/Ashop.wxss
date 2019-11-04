@@ -1,0 +1,138 @@
+/* pages/shop/Ashop.wxss */
+.shop{
+
+}
+.head{
+  background: #ded4cb;
+  padding: 18rpx;
+  text-align: center;
+  position: relative;
+}
+.go{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/rank_14.png') no-repeat;
+  background-size: 100% 100%;
+  top: 36rpx;
+  left: 40rpx;
+}
+.head .right{
+  font-size: 30rpx;
+  color: #886643;
+  line-height: 160%;
+  position: absolute;
+  right: 40rpx;top: 40rpx;
+  border-bottom: 2rpx solid #886643
+}
+.yt{
+  display: inline-block;
+  width: 216rpx;
+  height: 216rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  text-align: center;
+}
+.yt1{
+  display: inline-block;
+  margin-top: 13rpx;
+  width: 190rpx;
+  height: 190rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.yt2{
+  display: inline-block;
+  margin-top: 9rpx;
+  width: 170rpx;
+  height: 170rpx;
+  background: #fff;
+  border: 1rpx solid #ded4cb;
+  border-radius: 50%;
+  text-align: center
+}
+.yt3{
+  margin-top: 30rpx;
+  width: 130rpx;
+  height: 130rpx;
+  display: inline-block
+}
+.yt3 .p{
+  line-height: 64rpx;
+  color: #886643;
+  text-align: center;
+}
+.yt3 .p1{
+  font-size: 48rpx;
+  border-bottom: 1rpx solid #ded4cb
+}
+.yt3 .p2{
+  font-size: 24rpx;
+}
+.mian{
+  padding:30rpx 50rpx;
+}
+.mian .ul .li{
+  position: relative;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #d4d0cc;
+}
+.mian .ul .li:last-child{
+  border-bottom:0
+}
+.mian .ul .li .img{
+  width: 136rpx;
+  height: 136rpx;
+  background: #ebe6e1;
+  border-radius: 15rpx;
+  position: relative;
+}
+.mian .ul .li .img image{
+  border-radius: 15rpx;
+}
+.mian .ul .li .infoa{
+  flex: 1;
+  padding: 0 24rpx;
+  line-height: 180%
+}
+.mian .ul .li .info .p1{
+  color:#886643;
+  font-size: 30rpx;
+}
+.mian .ul .li .info .p2{
+  color:#aeaeae;
+  font-size: 24rpx;
+}
+.mian .ul .li .sp{
+  color:#aeaeae;
+  font-size: 24rpx;
+}
+.mian .ul .li .btn{
+  width: 162rpx;
+  height: 56rpx;
+  background: #c6a582;
+  border-radius: 15rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 56rpx;
+}
+.mian .ul .li .img .day{
+  width: 72rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #bca186;
+  border-radius:0 15rpx 0 15rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #eae3d3
+}
+
+.mian .ul .li:first-child .img .day{
+  display: none
+}
+.mian .ul .li:first-child .infoa .sp{
+  display: none
+}

@@ -1,0 +1,218 @@
+/* pages/game/runner.wxss */
+.container{
+  background: blue
+}
+.runner{
+  width: 698rpx;
+  height: 790rpx;
+  position: relative;
+}
+.runner .index_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.runner .fontsa{
+  position: absolute;
+  top: 380rpx;
+  font-size: 20rpx;
+  left: 200rpx;
+  color: #fff8ee;
+  opacity: 0.5;
+}
+.font{
+  position: fixed;
+  right: 50rpx;
+  top: 50rpx;
+  height: 744rpx;
+  width: 82rpx;
+}
+.font>view{
+  width:34rpx;
+}
+.font>view image{
+  width: 34rpx;
+}
+.font .p2{
+  text-align: center;
+  width: 40rpx;
+  font-size: 32rpx;
+  color: #fff8ee;
+}
+.none{
+  display: none;
+}
+.runner image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 698rpx;
+  height: 790rpx;
+}
+.runner-wrap{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-size: cover !important;
+  transition:all 5s;
+}
+.show{
+  opacity: 1
+}
+.hide{
+  opacity: 0
+}
+
+.runner-yun{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-size: cover !important;
+}
+.btn{
+  position: absolute;
+  left: calc(50% - 150rpx);
+  bottom: 30rpx;
+  width: 300rpx;
+  height: 82rpx;
+  margin: auto;
+  z-index: 10
+}
+.ons{animation:3s ease-out backwards;animation:fadeinB 3s;}
+.ons1{animation:4s ease-out backwards;animation:fadeinB 4s;}
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pupli{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.pupli>.p{
+  color: #fff8ee;
+  font-size: 36rpx;
+  opacity: 0.8;
+  animation:flash 2s;
+}
+.title_pig{
+  padding-top: 150rpx;
+  text-align: center
+}
+.exchange_bj{
+  width: 516rpx;
+  height: 772rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/popup_bj.png') no-repeat;
+  background-size: 100% 100% !important;
+}
+.exchange_bj .title{
+  display: inline-block;
+  width: 460rpx;
+  height: 122rpx;
+  background:url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/sec_bj.png') no-repeat;   
+  background-size: 100% 100%;
+  color: #886643;
+  font-size: 71rpx;
+  text-align: center;
+  line-height: 122rpx;
+}
+.exchange_bj .info{
+  padding-top: 36rpx;
+}
+.exchange_bj .info .p{
+  line-height: 60rpx;
+  font-size: 36rpx;
+  color: #886643;
+  text-align: center
+}
+.exchange_bj .btna{
+  width: 380rpx;
+  height: 79rpx;
+
+  color: #fff;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 82rpx;
+  margin: auto;
+  margin-top: 70rpx;
+}
+.exchange_bj .btna1{
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/cal_btn1.png') no-repeat;
+  background-size: 100% 100% !important;
+}
+.exchange_bj .btna.btna2{
+  margin-top: 20rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/cal_btn2.png') no-repeat;
+  background-size: 100% 100% !important;
+}
+.exchange>.closea{
+  width: 72rpx;
+  height: 72rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/close.png') no-repeat;
+  background-size: 100% 100% !important;
+  margin: auto;
+  margin-top: 40rpx;
+}
+.PreservationImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+}
+.PreservationImg .img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.PreservationImg>.btnasa{
+  position: absolute;
+  top: 30rpx;
+  left: 35rpx;
+  width: 238rpx;
+  height: 77rpx;
+}
+@keyframes fadeinB{
+    0%{opacity:0;transform:translateX(100px);}
+    100%{opacity:1;transform:translateX(0);}
+}
+@keyframes fadeinB1{
+    0%{opacity:0;transform:translateX(100px);}
+    100%{opacity:1;transform:translateX(0);}
+}
+@keyframes fadeinF{
+    0%{opacity:0;transform:scale(1);}
+    100%{opacity:1;transform:scale(1.2);}
+}
+@keyframes flash {
+	0%,50%,to {
+	opacity:1
+}
+25%,75% {
+	opacity:0
+}
+}

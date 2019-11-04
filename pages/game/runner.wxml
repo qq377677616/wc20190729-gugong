@@ -1,0 +1,55 @@
+<!--pages/game/runner.wxml-->
+<view class="container flex_tb" bindtap="click" style="background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game2_632.png') top no-repeat;">
+    <view class="runner">
+      <image class="index_img {{index0==index?'show':'hide'}}" wx:for="{{num}}" wx:for-item="item" wx:key="index" bindload="onImageLoad" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/n_000{{item}}.png"></image>
+      <!-- <view class="fontsa">
+        轻点转经筒
+      </view> -->
+      <!-- <image class="dianbtn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/dianbtn.png"></image> -->
+    </view>
+    <view class="font flex_ssaf">
+    <view class="p2" class="ons">
+       <image mode="widthFix" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/s_font2.png"></image>
+      </view>
+      <view class="p1" class="ons1">
+        <image mode="widthFix" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/s_font1.png"></image>
+      </view>
+      
+    </view>
+<!-- <view class="index_wrap" >
+   <view class="index_story_text">{{text}}</view>
+</view> -->
+<!-- 
+  <view class="runner-yun" style="background:url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game2_1.png') center no-repeat;"></view> -->
+  <!-- <view class="info" style="background: url('../../img/game2_5.png') top no-repeat;">
+
+  </view> -->
+  <!-- <image class="btn" bindtap="jump_btn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/cao_btn.png"></image> -->
+</view>
+ <view class="popup flex_tb" wx:if="{{exchange}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title_pig">
+          <view class="title">
+            闯关成功
+          </view>
+        </view>
+        <view class="info">
+          <view class="p">获得金砖*10</view>
+          <!-- <view class="p" wx:if="{{status}}">获得屋脊兽*1</view> -->
+          <view class="p">获得一次抽奖机会</view>
+          <view class="p" wx:if="{{is_fly}}">获得放飞心愿一次</view>
+        </view>
+        <view class="btna btna1" bindtap="quebtn"></view>
+        <view class="btna btna2" bindtap="quebtn1"></view>
+      </view>
+      <!-- <view class="closea" bindtap="closes"></view> -->
+    </view>
+  </view>
+  <view class="pupli flex_tb" wx:if="{{pupli}}">
+    <view class="p">轻点转经筒,完成关卡</view>
+  </view>
+  <view class="PreservationImg" wx:if="{{PreservationImg}}">
+    <image class="img" bindlongtap="save" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_imgs1.png"></image>
+    <image class="btnasa" bindtap="jump_btn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_5.png"></image>
+  </view>

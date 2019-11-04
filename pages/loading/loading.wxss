@@ -1,0 +1,41 @@
+/* pages/loading/loading.wxss */
+.container{ background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/a-bj.jpg') no-repeat;}
+.tan_word{
+  width: 670rpx;
+  height: 900rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/story_3.png') no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin-bottom: 100rpx;
+}
+.font{
+  display: inline-block;
+  text-align: center;
+  position: relative
+}
+.font image{
+  width: 451rpx;
+}
+.top{
+  position: fixed;
+  top: 20rpx;
+  right: 30rpx
+}
+.bottom{
+position: fixed;
+  bottom: 30rpx;
+}
+.font_btn{
+  width: 550rpx;
+  height: 135rpx;
+  color: #7b5221;
+  background:url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/first_6.png') no-repeat;
+  background-size: 100% 100%;
+}
+.ons{animation:5s ease-out backwards;animation:fadeinB 5s;}
+
+
+@keyframes fadeinB{
+    0%{opacity:0;transform:translateY(200px);}
+    100%{opacity:1;transform:translateY(0);}
+}

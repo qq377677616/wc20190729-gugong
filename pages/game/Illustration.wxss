@@ -1,0 +1,54 @@
+/* pages/game/Illustration.wxss */
+/* pages/game/exhibition.wxss */
+.container{
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_3.png') no-repeat;
+}
+.bang{
+  position: absolute;
+  bottom: 100rpx;
+  left: 21rpx;
+  width: 708rpx;
+}
+.bang .in{
+  width: 100%;
+  position: relative;
+}
+.bang .in .img{
+  width: 100%;
+}
+.sta_btn {
+  width: 480rpx;
+  height: 100rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/sta_btn12.png') no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+  margin-top: 50rpx;
+  text-align: center;
+  color: #543808;
+  font-size: 36rpx;
+  line-height: 100rpx;
+}
+
+.ons{animation:5s ease-out backwards;animation:fadeinB 3s;}
+.close{
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/x.png') no-repeat;
+  background-size: 100% 100%;
+}
+.btn{
+  position: absolute;
+  left: calc(50% - 150rpx);
+  bottom: 30rpx;
+  width: 300rpx;
+  height: 82rpx;
+  margin: auto;
+}
+
+@keyframes fadeinB{
+    0%{opacity:0;transform:translateY(100px);}
+    100%{opacity:1;transform:translateY(0);}
+}

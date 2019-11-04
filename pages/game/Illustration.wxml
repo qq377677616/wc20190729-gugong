@@ -1,0 +1,14 @@
+<view class="container" style="background: url('{{h5Url}}') no-repeat; background-size: 100% 100%;">
+  <view class="bang">
+    <view class="in ons">
+      <image class="img" src="{{img}}" mode="widthFix"></image>
+      <view class="sta_btn">get 通关</view>
+      <view class="close"></view>
+    </view>
+  </view>
+  <!-- <view class="bang flex_tb">
+    <image class="ons" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_1.png"></image>
+  </view> -->
+
+  <!-- <image class="btn" bindtap="jump_btn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/yue_btn.png"></image> -->
+</view>

@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container flex-cen-col">
+  <view class="head flex_ssaf">
+    <image class="img1" bindtap="jump_logs" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/rank_14.png"></image>
+    <image class="img2" bindtap="jump_redire" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/lottery_5.png"></image>
+  </view>
+  <view class="prizeBox">
+    <view class="prize_box">
+      <view class="ul">
+        <view class="li {{curIndex == index ? 'cur' : ''}}" wx:for="{{prize}}" wx:key="{{item.id}}">
+          <image wx:if="{{item.img}}" src="{{item.img}}"></image>
+          <view>{{item.name}}</view>
+        </view>
+      </view>
+      <view class="start {{isPrize ? '' : 'on'}}]" bindtap="start"><text wx:if="{{isPrize}}">开始</text><text wx:if="{{!isPrize}}">好运来...</text></view>
+    </view>  
+  </view>
+  <view class="num">剩余免费抽奖次数<span> {{cj_num}} </span>次</view>
+  <view class="sta_btn" bindtap="closes">故宫文创锦鲤大礼包</view>
+  <view class="popup flex_tb" wx:if="{{close}}">
+    <view class="jianggongs">
+      <view class="btn" bindtap="closes">我知道了</view>
+    </view>
+  </view>
+  <!-- <view class="sta_btn1 flex_ssaf">
+    <view class="sta_btn1_a" bindtap="jumps_dao">我的道具</view>
+    <view class="sta_btn1_a" bindtap="jumps">终极大奖</view>
+  </view> -->
+</view>

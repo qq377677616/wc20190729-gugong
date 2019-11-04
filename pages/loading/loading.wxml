@@ -1,0 +1,10 @@
+<view class="container flex_tb">
+  <view class="tan_word flex_tb">
+
+    <view class="{{ons}} font" bindtap='ons'>
+      <image class='fadeinB ons' src='https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/story_4.png' mode="widthFix" ></image>
+     
+    </view>
+    <view class="font_btn bottom" bindtap="jump_home"></view>
+  </view>
+</view>

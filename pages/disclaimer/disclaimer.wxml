@@ -1,0 +1,25 @@
+<!--pages/disclaimer/disclaimer.wxml-->
+<view class="container">
+  <view class="con">
+    <scroll-view class="con_info" scroll-y="true" style="overflow: hidden;">
+      <view class="h2">免责申明</view>
+      <view class="p">
+        本免责及隐私保护声明适用于“全民祈福跑”线上活动，在您阅读本声明后若不同意此声明中的条款，或对本声明存疑，可停止参与活动。若您已经在参与活动，则表示您已阅读并同意本声明的所有条款之约定。</view>
+      <view class="p">1、总则</view>
+      <view class="p">本活动如“条款”有任何变更，小程序将发布更改通知，经修订的“条款”一经在官方渠道公布后，立即自动生效。</view>
+      <view class="p">2、免责声明</view>
+      <view class="p">因您更换手机设备或终端设备损坏，您的活动相关数据可能都将会被清空，且无法查询和恢复，如因此造成损失，均由您自行承担。如您使用我方认可的第三方帐号作为活动账号，您还应遵守有关该第三方帐号的协议、规则，且因该第三方帐号产生的相关问题包括但不限于被盗等，您应自行联系该第三方进行解决，我方可视情况提供相应的协助。</view>
+      <view class="p">活动中如需留资页面请如实填写信息，如因相关信息填写错误造成奖品等损失，将由您自行承担。您悉知并同意，我方有权针对恶意刷分、恶意破坏活动规则的账号进行封号处理，且取消一切不正当途径获得奖品权利。</view>
+      <view class="p">最终一切解释权归活动官方所有。</view>
+    </scroll-view>
+  </view>
+  <view class="disclaimer_font flex_c_m">
+    <view class="frame flex_tb" bindtap="isFrame">
+      <i wx:if='{{is_frame}}'></i>
+    </view>
+    <view class="p">我已阅读免责申明</view>
+  </view>
+  <view class="btn" bindtap="jumpMian">
+    <image src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/statement_5.png"></image>
+  </view>
+</view>

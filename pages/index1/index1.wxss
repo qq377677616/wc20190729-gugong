@@ -1,0 +1,245 @@
+/**index.wxss**/
+.home_bj0{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j0.jpg') top no-repeat;
+}
+.home_bj5{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j5.jpg') top no-repeat;
+}
+.home_bj35{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j35.jpg') top no-repeat;
+}
+.home_bj60{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j60.jpg') top no-repeat;
+}
+.home_bj85{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j85.jpg') top no-repeat;
+}
+.home_bj100{
+  background:#f7f2ec url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/j100.jpg') top no-repeat;
+}
+.wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.exchange_bj{
+  width: 516rpx;
+  height: 772rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/popup_bj.png') no-repeat;
+  background-size: 100% 100% !important;
+}
+.more{position: fixed;background-color: rgba(0, 0, 0, 0.5);height: 100%;width: 100%;z-index: 88;}
+.null{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.top{
+  padding: 50rpx;
+}
+.flex_top{
+  display: block;
+  overflow: hidden;
+}
+.icon{
+  width: 150rpx;
+  height: 52rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/icon-btn.png') no-repeat;
+  background-size: 100% 100% !important;
+  line-height: 52rpx;
+  text-align: center;
+  color: #886643;
+  font-size: 27rpx;
+}
+.icon1{
+  flex: 0 200rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/icon-btn1.png') no-repeat;
+  height: 52rpx;
+  background-size: 100% 100% !important;
+  line-height: 52rpx;
+  text-align: center;
+  color: #886643;
+  font-size: 27rpx;
+  margin-right: 25rpx;
+}
+.icon1:last-child{
+  margin-right: 0
+}
+.ranking{
+  padding-top: 450rpx;
+  padding-right: 50rpx;
+  text-align: right;
+}
+.icon2{
+  display: inline-block;
+  width: 52rpx;
+  height: 200rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/icon-btn2.png') no-repeat;
+  background-size: 100% 100% !important;
+}
+.list{
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+  /* margin-top: 25rpx;*/
+  padding-top: 70rpx; 
+  background-size:100% !important;
+  min-height: 100px;
+}
+.list-div{
+  width: 720rpx;
+  height: 250rpx;
+  margin: auto;
+  background-size: 100% 100% !important;
+  position: relative;
+}
+.list-div-a{
+  width: 100%;
+  height: 100%;
+}
+.list-div-s{
+  position: absolute;
+  bottom: -38rpx;
+  left: 35rpx;
+  width: 650rpx;
+}
+.close{
+  width: 72rpx;
+  height: 72rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/close.png') no-repeat;
+  background-size: 100% 100% !important;
+  margin: auto;
+  margin-top: 40rpx;
+}
+.exchange_bj .p{
+  color: #886643
+}
+.exchange_bj .title{
+  padding-top: 155rpx;
+  height: 100rpx;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+}
+.exchange_bj .title i{
+  font-size: 47rpx;
+  line-height: 100rpx;
+}
+.exchange_bj .title span{
+  line-height: 71rpx;
+  font-size: 71rpx;
+}
+.exchange_bj .mian{
+  padding: 0 60rpx;
+}
+.exchange_bj .mian .mian_title{
+  font-size: 24rpx;
+  line-height: 48rpx;
+}
+.exchange_bj .mian .li{
+  width: 170rpx;
+  text-align: center;
+}
+.exchange_bj .mian .li .img{
+  width: 170rpx;
+  height: 170rpx;
+  background: #cfae82;
+  border-radius: 10rpx;
+}
+.exchange_bj .mian .li .inp{
+  width: 80%;
+  margin:10rpx auto;
+  background: #fff;
+  border:1rpx solid #886643;
+  border-radius: 6rpx;
+}
+.btn1{
+  margin-top: 40rpx;
+  width: 100%;
+  height: 82rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/btn1.png') no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  line-height: 82rpx;
+  font-size: 35rpx;
+  text-align: center
+}
+.p3{
+  line-height: 56rpx;
+  font-size: 22rpx;
+  color: #ac804a;
+  text-align: center
+}
+.btnsa{
+  position: relative;
+}
+.b_icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.zindex1{
+  z-index: 1
+}
+.zindex2{
+  z-index: 2
+}
+.rule .imgs{
+  width: 748rpx;
+  height: 1095rpx;
+}
+.rule_s{
+  position: relative;
+}
+.rule_s .imgc{
+  position: absolute;
+  top: 17rpx;
+  right: 12rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.none{
+  display: none
+}
+.usual_progress{
+  position: fixed;
+  top: 350rpx;
+  right: -124rpx;
+  width: 400rpx;
+  height: 50rpx;
+  transform:rotate(270deg);
+  border-radius: 20rpx;
+}
+.list-div-info .img{
+  width: 160rpx;
+  height: 140rpx;
+  background: #eee;
+  margin-right: 60rpx;
+}
+.list-div-info .info_h2{
+  font-size: 25rpx;
+}
+.list-div-info .info_p{
+  font-size: 22rpx;
+}
+.list-div-info .info{
+  color: #876542
+}

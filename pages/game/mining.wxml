@@ -1,0 +1,38 @@
+<!--pages/game/mining.wxml-->
+<view class="container">
+  <view class="flower Location1 {{on}}" bindtap="jumpHua" data-index="1"></view>
+  <view class="flower Location2 {{on1}}" bindtap="jumpHua" data-index="2"></view>
+  <view class="flower Location3 {{on2}}" bindtap="jumpHua" data-index="3"></view>
+  <view class="flower_la"></view>
+  <view class="bang  {{ona}} {{t1}}">
+    <view class="fonts">
+      途径甘南，遇上当地盛大的“采花节”。采花节是花神的祭节，采得越多寓意吉祥祝福。快来替小朋友们采花积福。
+      <image class="co" bindtap="jump_btns" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_7.png"></image>
+    </view>
+  </view>
+  <image class="show" wx:if="{{t1}}" bindtap="jump_btns1" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_6.png"></image>
+</view>
+ <view class="popup flex_tb" wx:if="{{exchange}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title_pig">
+          <view class="title">
+            闯关成功
+          </view>
+        </view>
+        <view class="info">
+          <view class="p">获得金砖*10</view>
+          <!-- <view class="p" wx:if="{{status}}">获得屋脊兽*1</view> -->
+          <view class="p">获得一次抽奖机会</view>
+          <view class="p" wx:if="{{is_fly}}">获得放飞心愿一次</view>
+        </view>
+        <view class="btna btna1" bindtap="quebtn"></view>
+        <view class="btna btna2" bindtap="quebtn1"></view>
+      </view>
+      <view class="closea" bindtap="closes"></view>
+    </view>
+  </view>
+  <view class="PreservationImg" wx:if="{{PreservationImg}}">
+    <image class="img" bindlongtap="save" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_imgs2.png"></image>
+    <image class="btnasa" bindtap="jump_btn" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_5.png"></image>
+  </view>

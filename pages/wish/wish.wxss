@@ -1,0 +1,105 @@
+/* pages/wish/wish.wxss */
+.container{
+
+  text-align: center;
+}
+.bj{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1
+}
+.index_img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.show{
+  opacity: 1
+}
+.hide{
+  
+  opacity: 0
+}
+.deng{
+  position: absolute;
+  bottom: -300rpx;
+  right: -300rpx;
+  z-index: 1;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/deng.png') no-repeat;
+  background-size: 100% 100%;
+  width: 348rpx;
+  height: 277rpx;
+   
+}
+.on{
+  transform:scale(2) translateY(-300px) translateX(-300px) 5s; 
+  animation:3s;
+}
+.from{
+  display: inline-block;
+  margin: auto;
+  position: relative;
+}
+.place-holder{
+  color: #fff
+}
+.f_input{
+  display: inline-block;
+  width: 536rpx;
+  height: 88rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/input_bj.png') no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 40rpx;
+  color: #fff
+}
+.place-holder1{
+  color: #886643;
+}
+.f_textarea{
+  display: inline-block;
+  text-align: left;
+  width: 566rpx;
+  height: 198rpx;
+  color: #886643;
+  padding: 20rpx 30rpx 240rpx 30rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/letter_bj.png') no-repeat;
+  background-size: 100% 100%; 
+}
+.sop{
+  text-align: left;
+  padding-left: 70rpx;
+  padding-bottom: 20rpx;
+}
+.sop image{
+  width: 167rpx;
+  display: inline-block;
+}
+.btn{
+  position: absolute;
+  bottom: 35rpx;
+  left: 158rpx;
+width: 434rpx;
+  height: 88rpx;
+  background: url('https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/btnsss.png') no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+  line-height: 88rpx;
+  text-align: center;
+  color: #543808;
+  font-size: 42rpx;
+  margin-top: 470rpx;
+}
+.ons{animation:fadeinF 5s;}
+@keyframes fadeinF{
+    0%{transform: scale(1) translateY(10px) translateX(10px);}
+    40%{transform: scale(2) translateY(-120px) translateX(-120px);}
+    70%{transform: scale(2) translateY(-120px) translateX(-120px);}
+    100%{transform: scale(2) translateY(-300px) translateX(-300px);}
+    
+}

@@ -1,0 +1,69 @@
+<!--pages/Iprop/Iprop.wxml-->
+<view class="container">
+  <view class="flex_mian flex_tb">
+    <view class="mian">
+      <scroll-view class="ul" scroll-y="true" style="height:{{1005}}rpx;overflow: hidden;" bindscrolltolower="loadData">
+        <image class="tool" src="http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/prop_5.png" mode="widthFix"></image>
+        <view class="li" wx:for="{{zuo_arr}}" wx:for-item="item">
+          <view class="div flex_ssaf" >
+            <view class="flex1"><image src="{{item.equip_img}}"></image></view>
+            <view class="info">
+              <view class=" tool_title">
+                {{item.equip_title}}
+              </view>  
+              <view class="tool_describe">
+                {{item.status==1?'无装备':'已装备'}}
+              </view>             
+            </view>
+            <view class="simg">
+              <image bindtap="equipment" data-id="{{item.id}}" data-name="zuo_arr" data-status="{{item.status}}" data-leng="{{zuo_arr.length}}" style="width: 132rpx;height: 49rpx;" src="{{item.status==1?'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/52222.png':'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/yzhuangbei.png'}}" mode="widthFix"></image>
+              <view wx:if="{{item.status==2}}" class="p">剩余时间</view>
+              <view wx:if="{{item.status==2}}" class="p">{{item.end_time}}</view>
+            </view>
+            
+            
+          </view>
+        </view>
+        <image class="tool" src="http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/prop_6.png" mode="widthFix"></image>
+        <view class="li" wx:for="{{kai_arr}}" wx:for-item="item">
+          <view class="div flex_ssaf" >
+            <view class="flex1"><image src="{{item.equip_img}}"></image></view>
+            <view class="info">
+              <view class=" tool_title">
+                {{item.equip_title}}
+              </view>  
+              <view class="tool_describe">
+                {{item.status==1?'无装备':'已装备'}}
+              </view>             
+            </view>
+            <view class="simg">
+              <image bindtap="equipment" data-id="{{item.id}}" data-name="kai_arr" data-status="{{item.status}}" data-leng="{{kai_arr.length}}" style="width: 132rpx;height: 49rpx;" src="{{item.status==1?'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/52222.png':'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/yzhuangbei.png'}}" mode="widthFix"></image>
+              <view wx:if="{{item.status==2}}" class="p">剩余时间</view>
+              <view wx:if="{{item.status==2}}" class="p">{{item.end_time}}</view>
+            </view>     
+          </view>
+        </view>
+        <image class="tool" src="http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/prop_16.png" mode="widthFix"></image>
+        <view class="li" wx:for="{{tou_arr}}" wx:for-item="item">
+          <view class="div flex_ssaf" >
+            <view class="flex1"><image src="{{item.equip_img}}"></image></view>
+            <view class="info">
+              <view class=" tool_title">
+                {{item.equip_title}}
+              </view>  
+              <view class="tool_describe">
+                {{item.status==1?'无装备':'已装备'}}
+              </view>             
+            </view>
+             <view class="simg">
+              <image bindtap="equipment" data-id="{{item.id}}" data-name="tou_arr" data-status="{{item.status}}" data-leng="{{tou_arr.length}}" style="width: 132rpx;height: 49rpx;" src="{{item.status==1?'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/52222.png':'https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/yzhuangbei.png'}}" mode="widthFix"></image>
+              <view wx:if="{{item.status==2}}" class="p">剩余时间</view>
+              <view wx:if="{{item.status==2}}" class="p">{{item.end_time}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="go" bindtap="jump_a"></view>
+  </view>
+  </view>
+</view>

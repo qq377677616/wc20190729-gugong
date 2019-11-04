@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "祈福之路",
+  "usingComponents": {
+    "signIn": "/components/signIn/signIn"
+  }
+}

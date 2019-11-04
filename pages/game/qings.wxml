@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="noodles flex_line_c_m">
+    <view class="noodles_wrap" bindtap="xuan">
+      <image class="index_img {{index0==index?'show':'hide'}}" mode="widthFix" wx:for="{{num}}" wx:for-item="item" wx:key="index" bindload="onImageLoad" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/qings({{item+1}}).png"></image>
+    </view>
+  </view>
+  <view class="bang {{ons}} {{t1}}">
+    <!-- <image class="ons" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/game_1.png"></image> -->
+    <view class="fonts">
+      一千多年前文成公主带着唐王赐给她的黑科技产品——能够照出家乡景象的“日月宝镜”进藏和亲，途中公主想家了，拿出日月宝镜，果然看见了久违的长安，小姐姐睹乡伤情，刷刷掉眼泪，然而转念一想:“我这哭哭啼啼嫁过去，夫家准以为我嫌弃他，不妥，不妥”。为了夫妻团结，文成小公举毅然决然的将日月宝镜扔了出去，没想到那宝镜落地时闪出一道金光，化身为青海湖。
+      <image class="co" bindtap="jump_btns" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_7.png"></image>
+    </view>
+  </view>
+  <image class="shows" wx:if="{{t1}}" bindtap="jump_btns1" src="https://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/page_53_6.png"></image>
+</view>
+ <view class="popup flex_tb" wx:if="{{exchange}}">
+    <view class="exchange">
+      <view class="exchange_bj">
+        <view class="title_pig">
+          <view class="title">
+            闯关成功
+          </view>
+        </view>
+        <view class="info">
+          <view class="p">获得金砖*10</view>
+          <!-- <view class="p" wx:if="{{status}}">获得屋脊兽*1</view> -->
+          <view class="p">获得一次抽奖机会</view>
+          <view class="p" wx:if="{{is_fly}}">获得放飞心愿一次</view>
+        </view>
+        <view class="btna" bindtap="quebtn">确认</view>
+      </view>
+      <view class="closea" bindtap="closes"></view>
+    </view>
+  </view>

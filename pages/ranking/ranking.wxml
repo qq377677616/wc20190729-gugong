@@ -1,0 +1,63 @@
+<!--pages/ranking.wxml-->
+<view class="container">
+  <view class="flex_mian flex_tb">
+    <view class="mian">
+      <!-- <view class="title">
+        <image src="http://game.flyh5.cn/resources/game/wechat/tzj/img/gugong20190719/title1.png" mode="widthFix"></image>
+      </view> -->
+      <view class="go" bindtap="jump_redire"></view>
+      <scroll-view class="ul" scroll-y="true" style="height:{{1002-88}}rpx;overflow: hidden;position: relative;" bindscrolltolower="loadData">
+        <view class="li" wx:for="{{arr}}" wx:for-item="item">
+          <view class="div flex_ssaf" >
+            <view class="head flex_tb">
+              <view class="img">
+                <image src="{{item.headimg}}"></image>
+              </view>
+            </view>
+            <view class="info">
+              <view class="h2">
+                {{item.nickname}}
+              </view>  
+              <!-- <view class="p">
+                游戏称号
+              </view>              -->
+            </view>
+            <view class="a p1">
+              {{item.step_all}}K步
+            </view>
+            <view class="a p2">
+              {{item.rank}}
+            </view>
+          </view>
+        </view>
+        <view class="li" style="background-image: none;" >
+          
+        </view>
+      </scroll-view>
+      <view class="ul">
+        <view class="li this_pai bac" >
+          <view class="div flex_ssaf" >
+            <view class="head flex_tb">
+              <view class="img"><image src="{{user.avatarUrl}}"></image></view>
+              <!-- <image src=""></image> -->
+            </view>
+            <view class="info">
+              <view class="h2">
+               {{user.nickName}}
+              </view>  
+              <view class="p">
+                游戏称号
+              </view>             
+            </view>
+            <view class="a p1">
+              {{step_all}}K步
+            </view>
+            <view class="a p2">
+              {{my_rank}}
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+  </view>
+</view>
